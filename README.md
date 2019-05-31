@@ -50,3 +50,50 @@ Sr No. | Device | Description | Quantity | Brief Purpose
 16 | Stepper Motor | Unipolar Stepper Motor | 3 | To Dispece Drink
 17 | MPX4250 | Pressure Sensor | 1 | Detect Number of Coins 
 18 | SW-SPDT-MOM | Momentary Interactive Switch | 1 | Processor Reset
+
+# Interfacing 
+
+**Memory**<br>
+RAM : 2KB+2KB = 4 KB<br>
+ROM : 8KB+8KB = 16KB<br>
+* Random Access Memory (RAM):<br>
+Starting address – 02000H<br>
+Ending address – 02FFFH<br>
+Even bank begins at 02000H and ends at 02FFEH<br>
+Odd bank begins at 02001H and ends at 02FFFH<br>
+* Read Only Memory (ROM):<br>
+1. ROM 1(8 KB)<br>
+Starting address – 00000H<br>
+Ending address – 01FFFH<br>
+Even bank begins at 00000H and ends at 01FFEH<br>
+Odd bank begins at 00001H and ends at 01FFFH<br>
+2. ROM 2(8 KB)<br>
+Starting address – FE000H<br>
+Ending address – FFFFFH<br>
+Even bank begins at FE000H and ends at FFFFEH<br>
+Odd bank begins at FE001H and ends at FFFFFH<br>
+
+**IO (Using I/O Mapped I/O)**<br>
+Mapping of 8255(1):<br>
+Port A: 00h<br>
+Port B: 02h<br>
+Port C: 04h<br>
+Control Register: 06h<br>
+Mapping of 8255(2):<br>
+Port A: 10h<br>
+Port B: 12h<br>
+Port C: 14h<br>
+Control Register: 16h<br>
+Mapping of 8253(1):<br>
+Counter 0: 20h<br>
+Counter 1: 22h<br>
+Counter 2: 24h<br>
+Control Register: 26h<br>
+Mapping of 8253(2):<br>
+Counter 0: 40h<br>
+Counter 1: 42h<br>
+Counter 2: 44h<br>
+Control Register: 46h<br>
+Mapping of 8259:<br>
+Address 0: 30h<br>
+Address 1: 32h<br>
