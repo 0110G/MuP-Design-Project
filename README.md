@@ -48,7 +48,7 @@ Sr No. | Device | Description | Quantity | Brief Purpose
 13 | Button | Button | 7 | For User To choose drinks, sizes and dispence
 14 | L293D | Push-Pull 4 channel | 3 | Control Stepper Motor
 15 | LED | Red LEDs | 10 | To indicate current choice
-16 | Stepper Motor | Unipolar Stepper Motor | 3 | To Dispece Drink
+16 | Stepper Motor | Unipolar Stepper Motor | 3 | To Dispence Drink
 17 | MPX4250 | Pressure Sensor | 1 | Detect Number of Coins 
 18 | SW-SPDT-MOM | Momentary Interactive Switch | 1 | Processor Reset
 
